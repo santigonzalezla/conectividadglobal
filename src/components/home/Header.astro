@@ -1,0 +1,45 @@
+---
+import Navbar from "./Navbar.astro";
+import Hero from "./Hero.astro";
+---
+
+<header>
+    <Navbar />
+    <Hero />
+</header>
+
+<style>
+    header
+    {
+        border-radius: 20px;
+        margin: 20px;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px)
+    {
+        img
+        {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+        img
+        {
+            max-height: calc(100% - 150px);
+        }
+    }
+
+    @media screen and (min-width: 1500px)
+    {
+        img
+        {
+            max-height: calc(100% - 150px);
+        }
+    }
+</style>
