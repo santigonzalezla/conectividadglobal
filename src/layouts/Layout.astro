@@ -26,7 +26,9 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
+	@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+	:root
+	{
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
 		--accent-dark: 49, 10, 101;
@@ -37,19 +39,31 @@ const { title } = Astro.props;
 			white 60%
 		);
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-size: 224px;
+
+	*
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+
+	html
+	{
+		font-family: 'Outfit', sans-serif;
+		background: #FFF;
+		scroll-behavior: smooth;
+	}
+
+	:global(html)
+	{
+		scroll-behavior: smooth;
+	}
+
+	@media (prefers-reduced-motion: reduce)
+	{
+		:global(html)
+		{
+			scroll-behavior: auto;
+		}
 	}
 </style>

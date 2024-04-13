@@ -1,42 +1,71 @@
+---
+import Button from "../shared/Button.astro";
+---
 <nav>
-    <h1 onclick="window.location.href = 'index.html'">
-        Conectividad Global
-    </h1>
-    <ul>
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#about">Nosotros</a></li>
-        <li><a href="#service">Servicios</a></li>
-        <li><a href="#testimonials">Portfolio</a></li>
-    </ul>
-    <button><a href="#contact">Contáctanos</a></button>
+    <div class="img-container">
+        <img onclick="window.location.href = 'index.html'" src='https://i.imgur.com/0EZ41J4.png' alt='Logo'/>
+    </div>
+    <div class="option-container">
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#service">Servicios</a></li>
+            <li><a href="#testimonials">Portfolio</a></li>
+        </ul>
+    </div>
+    <div class="button-container">
+        <Button
+                text="Contáctanos"
+                color="dark"
+                link="#contact"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#FFF" d="M16.175 13H5q-.425 0-.712-.288T4 12q0-.425.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z"/></svg>
+        </Button>
+    </div>
+    <!--<button><a href="#contact">Contáctanos</a></button>-->
 </nav>
 
 <style>
-    @font-face
-    {
-        font-family: "Fun City Level 3 Basic";
-        src: url("https://db.onlinewebfonts.com/t/506ff1864a3cdecf43c4b1bc8c246b9c.eot");
-        src: url("https://db.onlinewebfonts.com/t/506ff1864a3cdecf43c4b1bc8c246b9c.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/506ff1864a3cdecf43c4b1bc8c246b9c.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/506ff1864a3cdecf43c4b1bc8c246b9c.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/506ff1864a3cdecf43c4b1bc8c246b9c.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/506ff1864a3cdecf43c4b1bc8c246b9c.svg#Fun City Level 3 Basic")format("svg");
-    }
-
     nav
     {
         max-width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 30px 65px;
+        gap: 40px;
+    }
+
+    .img-container
+    {
+        flex-basis: 30%;
+    }
+
+    .option-container
+    {
+        width: 100%;
+        flex-basis: 40%;
+    }
+
+    .button-container
+    {
+        flex-basis: 30%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    img
+    {
+        flex-basis: 30%;
+        width: 85px;
     }
 
     ul
     {
+        flex-basis: 40%;
         display: flex;
         align-items: center;
-        gap: 100px;
+        justify-content: center;
+        gap: 40px;
         list-style: none;
         transition: 0.3s all ease-in-out;
     }
@@ -45,28 +74,13 @@
     {
         text-decoration: none;
         color: inherit;
+        font-weight: 500;
+        transition: 0.3s all ease-in-out;
     }
 
-    h1
+    a:hover
     {
-        cursor: pointer;
-    }
-
-    button
-    {
-        font-family: 'Outfit', sans-serif;
-        color: #FFF;
-        border-radius: 300px;
-        background: #000;
-        padding: 15px 50px;
-        border: none;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-    }
-
-    button:hover
-    {
-        transform: scale(1.1);
+        color: #8493B6;
     }
 
     .icons
@@ -137,7 +151,6 @@
         }
     }
 
-    /* Estilos para pantallas grandes (más de 992px de ancho) */
     @media screen and (min-width: 768px) and (max-width: 1024px)
     {
         nav
