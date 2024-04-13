@@ -1,0 +1,75 @@
+---
+interface Props {
+    title: string;
+    text: string;
+    link: string;
+    color: string;
+    index: string;
+}
+
+const { title, text, link, color, index } = Astro.props;
+---
+
+<div class="card" style={`background: var(--Green-Light, ${color});`}>
+    <h3>{title}</h3>
+    <p>{text}</p>
+    <button onclick="window.location.href = 'index.html'">Descubre Más ...</button>
+    <div class="index">{index}</div>
+</div>
+
+
+<style>
+    .card
+    {
+        position: relative;
+        width: 350px;
+        height: 240px;
+        padding: 30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: start;
+        gap: 15px;
+    }
+
+    h3
+    {
+        font-size: 22px;
+        width: 80%;
+    }
+
+    p
+    {
+        font-size: 14px;
+        color: #818181;
+        font-weight: 300;
+    }
+
+    .index
+    {
+        position: absolute;
+        background: black;
+        color: white;
+        bottom: 0;
+        right: 0;
+        padding: 16px 24px;
+        border-radius: 12px 0 12px 0;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    button
+    {
+        font-family: 'Outfit', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        background: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+</style>
+

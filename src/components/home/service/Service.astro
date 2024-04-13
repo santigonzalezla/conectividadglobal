@@ -1,0 +1,121 @@
+---
+
+import Button from "../../shared/Button.astro";
+import ServiceCard from "./ServiceCard.astro";---
+
+<section class="service">
+    <div class="service-top">
+        <div class="service-top-left">
+            <h3>Nuestros Servicios</h3>
+            <h1>Conoce todas las posibilidades que ofrecemos en diferentes medios</h1>
+        </div>
+        <div class="service-top-right">
+            <p>We have 26+ other services</p>
+            <Button
+                text="Descubre Más"
+                color="dark"
+            />
+        </div>
+    </div>
+    <div class="service-cards">
+        <ServiceCard
+                title="Social media strategy & publicity"
+                text="Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper."
+                color="#F5FDEB"
+                index="01"
+        />
+        <ServiceCard
+                title="Social media strategy & publicity"
+                text="Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper."
+                color="#EBECFD"
+                index="02"
+        />
+        <ServiceCard
+                title="Social media strategy & publicity"
+                text="Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper."
+                color="#EBFAFD"
+                index="03"
+        />
+    </div>
+    <div class="service-cards">
+        <ServiceCard
+                title="Social media strategy & publicity"
+                text="Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper."
+                color="#F5FDEB"
+                index="04"
+        />
+        <ServiceCard
+                title="Social media strategy & publicity"
+                text="Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper."
+                color="#EBECFD"
+                index="05"
+        />
+        <ServiceCard
+                title="Social media strategy & publicity"
+                text="Tortor nisl elit pulvinar pellentesque libero varius libero ullamcorper."
+                color="#EBFAFD"
+                index="06"
+        />
+    </div>
+</section>
+
+<style>
+    .service
+    {
+        height: 100vh;
+        padding: 65px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service-top
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .service-top-left
+    {
+        flex-basis: 50%;
+    }
+
+    .service-cards
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+    }
+
+    h1
+    {
+        font-size: 35px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    h3
+    {
+        color: #8493B6;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    /*Mobile*/
+    @media (max-width: 768px)
+    {
+
+    }
+
+    /*Tablets*/
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+
+    }
+
+    /*Desktop*/
+    @media screen and (min-width: 1500px)
+    {
+
+    }
+</style>
