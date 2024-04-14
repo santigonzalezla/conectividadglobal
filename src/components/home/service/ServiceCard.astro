@@ -2,11 +2,12 @@
 interface Props {
     title: string;
     text: string;
+    link: string;
     color: string;
     index: string;
 }
 
-const { title, text, color, index } = Astro.props;
+const { title, text, link, color, index } = Astro.props;
 ---
 
 <div class="card" style={`background: var(--Green-Light, ${color});`}>
