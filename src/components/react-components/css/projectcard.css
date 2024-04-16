@@ -1,0 +1,54 @@
+.project-list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item
+{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: #142133;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 25px 30px;
+}
+
+.item-top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.item-top svg
+{
+    cursor: pointer;
+}
+
+.item-top-title
+{
+    display: flex;
+    gap: 20px;
+}
+
+.item-top-title h1
+{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.item-top-title h4
+{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.item-bottom p
+{
+    font-size: 14px;
+    font-weight: 200;
+}

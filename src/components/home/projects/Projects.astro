@@ -1,0 +1,217 @@
+---
+import ItemCard from "./ItemCard.astro";
+import ProjectList from "../../react-components/ProjectList";
+import Button from "../../shared/Button.astro";
+
+
+---
+
+<section class="projects">
+    <div class="projects-top">
+        <p>Lorem Ipsumis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the standard dummy text ever since the</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="140" height="10" viewBox="0 0 140 10" fill="none">
+            <path d="M5 5H135" stroke="#8493B6" stroke-width="10" stroke-linecap="round"/>
+        </svg>
+        <h2>Nuestros Proyectos</h2>
+    </div>
+    <div class="projects-mid">
+        <div class="projects-mid-video">
+
+        </div>
+        <div class="projects-mid-list">
+            <ProjectList
+                client:visible
+            />
+        </div>
+    </div>
+    <div class="projects-bottom">
+        <div class="projects-bottom-info">
+            <h1>¿Listo para hacer crecer tu empresa? Ponte en contacto hoy mismo.</h1>
+            <Button
+                    text="Contáctanos"
+                    link="#Contact"
+            />
+        </div>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="circle-4"></div>
+        <div class="circle-5"></div>
+    </div>
+</section>
+
+<style>
+    .projects
+    {
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        background-color: rgba(141, 172, 214, 0.15);
+        padding: 100px;
+        gap: 50px;
+    }
+
+    .projects-top
+    {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 200;
+        align-items: center;
+        gap: 65px;
+    }
+
+    .projects-top p
+    {
+        flex-basis: 50%;
+    }
+
+    .projects-top h2
+    {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .projects-mid
+    {
+        display: flex;
+        gap: 15px;
+    }
+
+    .projects-mid-video
+    {
+        flex-basis: 70%;
+        position: relative;
+        width: 100%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 80px 120px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #FFF;
+        overflow: hidden; /* Para asegurarse de que el contenido no se desborde */
+        text-align: center;
+    }
+
+    .projects-mid-video::before
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://i.imgur.com/IkaHLvP.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        z-index: -1;
+        border-radius: 30px;
+    }
+
+    .projects-mid-list
+    {
+        flex-basis: 30%;
+    }
+
+    .projects-bottom
+    {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        padding: 65px 50px;
+        background-color: #2D85FF;
+        border-radius: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .projects-bottom-info
+    {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    .projects-bottom h1
+    {
+        font-size: 42px;
+        font-weight: 700;
+        flex-basis: 60%;
+        color: #FFF;
+    }
+
+    .circle-1, .circle-2, .circle-3, .circle-4, .circle-5
+    {
+        z-index: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+    }
+
+    .circle-1, .circle-2, .circle-3
+    {
+        width: 220px;
+        height: 220px;
+    }
+
+    .circle-4, .circle-5
+    {
+        width: 140px;
+        height: 140px;
+    }
+
+    .circle-1
+    {
+        top: -43px;
+        left: 0;
+    }
+
+    .circle-2
+    {
+        left: 300px;
+        bottom: -94px;
+    }
+
+    .circle-3
+    {
+        left: 670px;
+        top: 0;
+    }
+
+    .circle-4
+    {
+        right: 135px;
+        bottom: -60px;
+    }
+
+    .circle-5
+    {
+        right: -30px;
+        top: -25px;
+    }
+
+    /*Mobile*/
+    @media (max-width: 768px)
+    {
+
+    }
+
+    /*Tablets*/
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+
+    }
+
+    /*Desktop*/
+    @media screen and (min-width: 1500px)
+    {
+
+    }
+</style>
