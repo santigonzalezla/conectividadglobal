@@ -1,0 +1,60 @@
+---
+import ProjectSection from "../../react-components/ProjectSection";
+---
+
+<section class="projects">
+    <div class="projects-top">
+        <h1>Nuestros Proyectos</h1>
+        <p>
+            Sé testigo de la brillantez de nuestros proyectos anteriores. Nuestra cartera muestra las exitosas
+            colaboraciones que hemos tenido con diversos clientes de distintos sectores. Deje que nuestro trabajo hable
+            por sí mismo.
+        </p>
+    </div>
+    <div class="projects-bottom">
+        <ProjectSection client:visible/>
+</section>
+
+<style>
+    .projects
+    {
+        background-color: #142133;
+        padding: 100px;
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .projects-top
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-top h1
+    {
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .projects-top p
+    {
+        align-self: center;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 200;
+        width: 80%;
+    }
+
+    .projects-bottom
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+</style>

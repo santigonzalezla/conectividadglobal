@@ -1,0 +1,198 @@
+---
+import Button from "../../shared/Button.astro";
+---
+
+<div class="hero">
+    <div class="hero-top">
+        <h3>Impulsa tu presencia en redes sociales con los servicios expertos de Conectividad Global</h3>
+        <p>
+            Placerat justo amet elit in tincidunt est risus vel purus. A convallis vel bibendum odio nunc. Lectus
+            faucibus ac in ipsum amet nullam turpis. Vel vitae aliquam eget faucibus at libero dignissim arcu
+        </p>
+        <Button
+                text="Conoce Más"
+                link="#Info"
+                color="dark"
+        >
+        </Button>
+    </div>
+    <div class="hero-bottom">
+        <div class="hero-bottom-left">
+            <div class="hero-bottom-img">
+
+            </div>
+            <div class="hero-bottom-title">
+                <h3>34+</h3>
+                <p>Años de Experiencia</p>
+            </div>
+        </div>
+        <div class="hero-bottom-center">
+            <div class="hero-bottom-img">
+
+            </div>
+            <div class="hero-bottom-title">
+                <h3>68M</h3>
+                <p>Seguidores en Redes</p>
+            </div>
+        </div>
+        <div class="hero-bottom-right">
+            <div class="hero-bottom-img">
+
+            </div>
+            <div class="hero-bottom-title">
+                <h3>97%</h3>
+                <p>Projectos Exitosos</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hero
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 100px;
+        gap: 30px;
+    }
+
+    .hero-top
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .hero-top h3
+    {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .hero-top p
+    {
+        width: 75%;
+        font-size: 20px;
+        font-weight: 200;
+        color: #818181;
+    }
+
+    .hero-bottom
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .hero-bottom-left,
+    .hero-bottom-right
+    {
+        flex-basis: 35%;
+    }
+
+    .hero-bottom-center
+    {
+        flex-basis: 60%;
+    }
+
+    .hero-bottom-img
+    {
+        height: 275%;
+        position: relative;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #FFF;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .hero-bottom-img::before
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://i.imgur.com/yfIBb7m.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        z-index: -1;
+        border-radius: 30px;
+    }
+
+    .hero-bottom-title
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-bottom-title h3
+    {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .hero-bottom-title p
+    {
+        font-size: 16px;
+        font-weight: 200;
+        color: #818181;
+    }
+
+    @media screen and (max-width: 767px)
+    {
+        .hero
+        {
+            width: 100%;
+            padding: 30px;
+        }
+
+        h1
+        {
+            width: 100%;
+            font-size: 40px;
+        }
+
+        p
+        {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+        .hero
+        {
+            width: 100%;
+            padding: 30px 65px;
+        }
+
+        h1
+        {
+            width: 50%;
+            font-size: 40px;
+        }
+
+        p
+        {
+            width: 50%;
+            font-size: 16px;
+        }
+    }
+</style>

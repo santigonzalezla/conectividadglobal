@@ -1,0 +1,166 @@
+---
+import Button from "../../shared/Button.astro";
+---
+
+<div class="service">
+    <div class="service-top">
+        <h3>Somos Conectividad Global</h3>
+        <h1>Eleva la presencia de tu marca con Innovación hasta alcanzar éxito sin precendentes</h1>
+    </div>
+    <div class="service-info">
+        <div class="service-info-card">
+            <h3>Estrategia</h3>
+            <p>Desarrollamos estrategias de marketing digital que se adaptan a las necesidades de tu empresa y a los objetivos que deseas alcanzar.</p>
+        </div>
+        <div class="service-info-card">
+            <h3>Integración</h3>
+            <p>Integramos las herramientas necesarias para que tu empresa alcance el éxito en el mundo digital.</p>
+        </div>
+        <div class="service-info-card">
+            <h3>Activación</h3>
+            <p>Activamos las estrategias de marketing digital para que tu empresa alcance el éxito en el mundo digital.</p>
+        </div>
+        <div class="service-info-card">
+            <h3>Optimización</h3>
+            <p>Optimizamos las estrategias de marketing digital para que tu empresa alcance el éxito en el mundo digital.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .service
+    {
+        padding: 50px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .service-top
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-top h3
+    {
+        font-size: 26px;
+        font-weight: 600;
+        color: #8493B6;
+        text-transform: capitalize;
+    }
+
+    .service-top h1
+    {
+        width: 70%;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .service-info
+    {
+        position: relative;
+        height: 100%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 50px 120px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #FFF;
+        overflow: hidden; /* Para asegurarse de que el contenido no se desborde */
+        text-align: center;
+    }
+
+    .service-info::before
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://i.imgur.com/yfIBb7m.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        z-index: -1;
+        border-radius: 30px;
+    }
+
+    .service-info-card
+    {
+        align-self: flex-start;
+        width: 55%;
+        background-color: #FFF;
+        padding: 15px 40px;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        gap: 5px;
+        text-align: left;
+    }
+
+    .service-info-card h3
+    {
+        font-size: 18px;
+        font-weight: 600;
+        color: #8493B6;
+        text-transform: capitalize;
+    }
+
+    .service-info-card p
+    {
+        font-size: 16px;
+        font-weight: 300;
+        color: #818181;
+    }
+
+    @media screen and (max-width: 767px)
+    {
+        .hero
+        {
+            width: 100%;
+            padding: 30px;
+        }
+
+        h1
+        {
+            width: 100%;
+            font-size: 40px;
+        }
+
+        p
+        {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+        .hero
+        {
+            width: 100%;
+            padding: 30px 65px;
+        }
+
+        h1
+        {
+            width: 50%;
+            font-size: 40px;
+        }
+
+        p
+        {
+            width: 50%;
+            font-size: 16px;
+        }
+    }
+</style>
