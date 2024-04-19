@@ -1,0 +1,118 @@
+---
+import FAQList from "../../react-components/FAQList";
+
+const accordionItems = [
+    {
+        title: 'Lorem Ipsumis simply dummy text of the prin....?',
+        content: 'Lorem Ipsuis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s ',
+    },
+    {
+        title: 'Lorem Ipsumis simply dummy text of the prin....?',
+        content: 'Lorem Ipsumis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s ',
+    },
+    {
+        title: 'Lorem Ipsumis simply dummy text of the prin....?',
+        content: 'Lorem Ipsumis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s ',
+    },
+];
+---
+
+<section class="faq">
+    <div class="faq-left">
+        <img class="faq-left-img-1" src="https://i.imgur.com/NLyCEp8.png" alt="FAQ"/>
+        <img class="faq-left-img-2" src="https://i.imgur.com/rOkKJEr.png" alt="FAQ-2"/>
+    </div>
+    <div class="faq-right">
+        <div class="faq-right-top">
+            <div class="faq-right-top-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M17 18.43H13L8.54999 21.39C7.88999 21.83 7 21.36 7 20.56V18.43C4 18.43 2 16.43 2 13.43V7.42993C2 4.42993 4 2.42993 7 2.42993H17C20 2.42993 22 4.42993 22 7.42993V13.43C22 16.43 20 18.43 17 18.43Z" stroke="#142133" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.0001 11.3599V11.1499C12.0001 10.4699 12.4201 10.1099 12.8401 9.81989C13.2501 9.53989 13.66 9.1799 13.66 8.5199C13.66 7.5999 12.9201 6.85986 12.0001 6.85986C11.0801 6.85986 10.3401 7.5999 10.3401 8.5199" stroke="#142133" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.9955 13.75H12.0045" stroke="#142133" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p>FAQ Questions</p>
+        </div>
+        <h2>Preguntas Frecuentes</h2>
+        <FAQList client:visible items={accordionItems} />
+    </div>
+</section>
+
+<style>
+    .faq
+    {
+        padding: 100px;
+        background: rgba(132, 147, 182, 0.20);
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+        height: 100vh;
+    }
+
+    .faq-left
+    {
+        width: 100%;
+        flex-basis: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+    }
+
+    .faq-left img
+    {
+        object-fit: cover;
+        border-radius: 20px;
+        border: 5px solid #FFF;
+    }
+
+    .faq-left-img-1
+    {
+        height: 100%;
+    }
+
+    .faq-left-img-2
+    {
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        width: 200px;
+        height: 300px;
+    }
+
+    .faq-right
+    {
+        width: 100%;
+        flex-basis: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .faq-right-top
+    {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .faq-right-top p
+    {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .faq-right-top-icon
+    {
+        border-radius: 8px;
+        background: rgba(20, 33, 51, 0.50);
+        padding: 6px 6px 3px 6px;
+    }
+
+    .faq-right h2
+    {
+        font-size: 36px;
+        font-weight: 600;
+    }
+</style>

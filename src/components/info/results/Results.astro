@@ -1,0 +1,51 @@
+---
+import ResultList from "../../react-components/ResultList";
+---
+
+<section class="results">
+    <div class="results-top">
+        <h4>Conoce nuestros resultados</h4>
+        <h2>Mantente a la Vanguardia</h2>
+        <p>Placerat justo amet elit in tincidunt est risus vel purus. A convallis vel bibendum odio nunc. Lectus faucibus ac Lectus faucibus ac in ipsum amet nullam turpis. rcu</p>
+    </div>
+    <div class="results-bottom">
+        <ResultList client:visible/>
+    </div>
+</section>
+
+<style>
+    .results
+    {
+        width: 100%;
+        padding: 70px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 65px;
+    }
+
+    .results-top
+    {
+        width: 60%;
+    }
+
+    .results-top h4
+    {
+        color: #8493B6;
+        font-size: 28px;
+    }
+
+    .results-top h2
+    {
+        font-size: 40px;
+        font-weight: 700;
+        color: #142133;
+    }
+
+    .results-top p
+    {
+        font-size: 18px;
+        font-weight: 300;
+        color: #818181;
+    }
+</style>

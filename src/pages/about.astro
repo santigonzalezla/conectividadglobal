@@ -2,24 +2,19 @@
 import Layout from '../layouts/Layout.astro';
 import Contact from "../components/home/contact/Contact.astro";
 import Footer from "../components/shared/Footer.astro";
+import Header from "../components/info/hero/Header.astro";
+import About from "../components/info/about/About.astro";
+import Results from "../components/info/results/Results.astro";
+import FAQ from "../components/info/faq/FAQ.astro";
 ---
 
 <Layout title="Conectividad Global">
 	<main>
+		<Header />
+		<About />
+		<Results />
+		<FAQ />
 		<Contact />
 		<Footer />
 	</main>
 </Layout>
-
-<style>
-	main
-	{
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-</style>

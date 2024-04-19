@@ -1,0 +1,131 @@
+.result-list
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+.result-list-top
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 65px;
+}
+
+.result-list-top-card
+{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EBECFD;
+    border-radius: 20px;
+    padding: 25px;
+    gap: 20px;
+}
+
+.result-list-top-card-info
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.result-list-top-card-info-item
+{
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #FFF;
+    border-radius: 20px;
+}
+
+.result-list-top-card-info-item p
+{
+    font-size: 20px;
+    font-weight: 300;
+    color: #818181;
+}
+
+.result-list-top-card-info-item h3
+{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.result-list-top-info
+{
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.result-list-top-info-features
+{
+    display: flex;
+    gap: 10px;
+}
+
+.result-list-top-info h2
+{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.result-list-top-info-features span
+{
+    padding: 7px 20px;
+    background: #FDEBF6;
+    border-radius: 10px;
+    color: #FF94D5;
+}
+
+.result-list-top-info p
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: #818181;
+}
+
+.result-list-top-info button
+{
+    margin-top: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    background-color: #142133;
+    color: white;
+    width: 185px;
+    height: 55px;
+    font-size: 16px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.result-list-top-info button:hover
+{
+    transform: scale(1.1);
+}
+
+.result-list-bottom
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}

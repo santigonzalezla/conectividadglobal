@@ -1,0 +1,55 @@
+.result-item
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.result-item img
+{
+    width: 100%;
+    height: 230px;
+    background: #FDEBF6;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.result-item-features
+{
+    display: flex;
+    gap: 10px;
+}
+
+.result-item-features span
+{
+    padding: 7px 20px;
+    background: #FDEBF6;
+    border-radius: 10px;
+    color: #FF94D5;
+}
+
+.result-item button
+{
+    margin-top: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    background-color: #142133;
+    color: white;
+    width: 185px;
+    height: 55px;
+    font-size: 16px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.result-item button:hover
+{
+    transform: scale(1.1);
+}

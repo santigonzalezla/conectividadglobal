@@ -1,0 +1,217 @@
+---
+import Button from "../../shared/Button.astro";
+---
+
+<div class="hero">
+    <div class="hero-top">
+        <div class="hero-top-left">
+            <h3>Soluciones Digitales para el Crecimiento de tu Negocio</h3>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="80%" viewBox="0 0 4 175" fill="none">
+            <path d="M2 2L1.99999 173" stroke="#8493B6" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <div class="hero-top-right">
+            <p>
+                Placerat justo amet elit in tincidunt est risus vel purus. A convallis vel bibendum odio nunc. Lectus
+                faucibus ac in ipsum amet nullam turpis. Vel vitae aliquam eget faucibus at libero dignissim arcu
+            </p>
+            <div class="hero-top-right-bottom">
+                <div class="hero-top-right-bottom-item">
+                    <div class="hero-top-right-bottom-item-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <ellipse cx="9.98055" cy="10" rx="9.90291" ry="10" fill="#D9D9D9"/>
+                        </svg>
+                        <h1>150  +</h1>
+                    </div>
+                    <p>Clientes Satisfechos</p>
+                </div>
+                <div class="hero-top-right-bottom-item">
+                    <div class="hero-top-right-bottom-item-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <ellipse cx="9.98055" cy="10" rx="9.90291" ry="10" fill="#D9D9D9"/>
+                        </svg>
+                        <h1>50  +</h1>
+                    </div>
+                    <p>Proyectos Realizados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-bottom">
+        <div class="hero-bottom-img">
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .hero
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        justify-content: space-between;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .hero-top
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 100px;
+    }
+
+    .hero-top-left
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .hero-top-left h3
+    {
+        width: 90%;
+        text-align: left;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .hero-top-right p
+    {
+        font-size: 16px;
+        font-weight: 200;
+        color: #818181;
+        text-align: left;
+    }
+
+    .hero-top-right
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .hero-top-right-bottom
+    {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .hero-top-right-bottom-item-top
+    {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .hero-bottom
+    {
+        flex-basis: 70%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-bottom-img
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #FFF;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .hero-bottom-img::before
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://i.imgur.com/yfIBb7m.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        z-index: -1;
+        border-radius: 30px;
+        padding: 100px;
+    }
+
+    .hero-bottom-title
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-bottom-title h3
+    {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .hero-bottom-title p
+    {
+        font-size: 16px;
+        font-weight: 200;
+        color: #818181;
+    }
+
+    @media screen and (max-width: 767px)
+    {
+        .hero
+        {
+            width: 100%;
+            padding: 30px;
+        }
+
+        h1
+        {
+            width: 100%;
+            font-size: 40px;
+        }
+
+        p
+        {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+        .hero
+        {
+            width: 100%;
+            padding: 30px 65px;
+        }
+
+        h1
+        {
+            width: 50%;
+            font-size: 40px;
+        }
+
+        p
+        {
+            width: 50%;
+            font-size: 16px;
+        }
+    }
+</style>
