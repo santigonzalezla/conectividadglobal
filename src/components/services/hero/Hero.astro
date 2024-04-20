@@ -1,0 +1,154 @@
+---
+import Button from "../../shared/Button.astro";
+---
+
+<div class="hero">
+    <div class="hero-left">
+        <h3>Apoyo Completo en tu Estrategia de Comunicación</h3>
+        <p>
+            Placerat justo amet elit in tincidunt est risus vel purus. A convallis vel bibendum odio nunc. Lectus
+            faucibus ac Lectus faucibus ac in ipsum amet nullam turpis. A convallis vel bibendum odio nunc.
+        </p>
+        <Button
+                text="Nuestros Servicios"
+                color="dark"
+                link="#services"
+        />
+    </div>
+    <div class="hero-right">
+        <div class="hero-bottom-img">
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .hero
+    {
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        gap: 120px;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .hero-left
+    {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-left h3
+    {
+        width: 90%;
+        text-align: left;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .hero-left p
+    {
+        font-size: 18px;
+        font-weight: 500;
+        color: #818181;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .hero-right
+    {
+        flex-basis: 40%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-bottom-img
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #FFF;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .hero-bottom-img::before
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://i.imgur.com/yfIBb7m.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        z-index: -1;
+        border-radius: 30px;
+        padding: 100px;
+    }
+
+    .hero-bottom-title
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 767px)
+    {
+        .hero
+        {
+            width: 100%;
+            padding: 30px;
+        }
+
+        h1
+        {
+            width: 100%;
+            font-size: 40px;
+        }
+
+        p
+        {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+        .hero
+        {
+            width: 100%;
+            padding: 30px 65px;
+        }
+
+        h1
+        {
+            width: 50%;
+            font-size: 40px;
+        }
+
+        p
+        {
+            width: 50%;
+            font-size: 16px;
+        }
+    }
+</style>

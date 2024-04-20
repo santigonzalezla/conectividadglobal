@@ -1,0 +1,178 @@
+---
+import Button from "../../shared/Button.astro";
+
+const items = [
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+]
+---
+
+<section class="quality">
+    <div class="quality-left">
+        <h3>Mantenemos los más Altos Estándares para Nuestros Proyectos</h3>
+        <div class="quality-left-list">
+            {items.map(item => (
+                    <div class="quality-left-list-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_68_319)">
+                                <circle cx="12" cy="12" r="12" fill="#142133"/>
+                                <path d="M6.44092 11.3158L10.3751 15.25L17.5593 8.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_68_319">
+                                    <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        {item.text}
+                    </div>
+            ))}
+        </div>
+        <Button
+                text="Reserva tu Cita"
+                color="dark"
+                link="#services"
+        />
+    </div>
+    <div class="quality-right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="83" height="105" viewBox="0 0 83 105" fill="none" style="position:absolute; top: 30%; right: 15%; z-index: 1">
+            <path d="M19.9603 0L20.4282 2.47158C21.9587 10.5528 28.4587 16.8764 36.766 18.3651L39.3063 18.8208L36.766 19.2764C28.4587 20.7651 21.9587 27.0887 20.4282 35.1699L19.9603 37.6415L19.4923 35.1699C17.9619 27.0887 11.4618 20.7651 3.15457 19.2764L0.614258 18.8208L3.15457 18.3651C11.4618 16.8764 17.9619 10.5528 19.4923 2.47158L19.9603 0Z" fill="#141414"/>
+            <path d="M68.8344 45.566L69.1546 47.257C70.2018 52.7863 74.6491 57.1133 80.3331 58.1319L82.0712 58.4434L80.3331 58.7549C74.6491 59.7735 70.2018 64.1005 69.1546 69.6298L68.8344 71.3208L68.5142 69.6298C67.4671 64.1005 63.0197 59.7735 57.3358 58.7549L55.5977 58.4434L57.3358 58.1319C63.0197 57.1133 67.4671 52.7863 68.5142 47.257L68.8344 45.566Z" fill="#141414"/>
+            <path d="M31.3576 90.1918L31.1606 89.1509L30.9636 90.1918C30.3191 93.594 27.5823 96.2571 24.0845 96.8839L23.0149 97.0755L24.0845 97.267C27.5823 97.8938 30.3191 100.557 30.9636 103.959L31.1606 105L31.3576 103.959C32.0021 100.557 34.7389 97.8938 38.2367 97.267L39.3063 97.0755L38.2367 96.8839C34.7389 96.2571 32.0021 93.594 31.3576 90.1918Z" fill="#141414"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="83" height="105" viewBox="0 0 83 105" fill="none" style="position:absolute; top: 50%; left: 40%; z-index: 1">
+            <path d="M19.9603 0L20.4282 2.47158C21.9587 10.5528 28.4587 16.8764 36.766 18.3651L39.3063 18.8208L36.766 19.2764C28.4587 20.7651 21.9587 27.0887 20.4282 35.1699L19.9603 37.6415L19.4923 35.1699C17.9619 27.0887 11.4618 20.7651 3.15457 19.2764L0.614258 18.8208L3.15457 18.3651C11.4618 16.8764 17.9619 10.5528 19.4923 2.47158L19.9603 0Z" fill="#141414"/>
+            <path d="M68.8344 45.566L69.1546 47.257C70.2018 52.7863 74.6491 57.1133 80.3331 58.1319L82.0712 58.4434L80.3331 58.7549C74.6491 59.7735 70.2018 64.1005 69.1546 69.6298L68.8344 71.3208L68.5142 69.6298C67.4671 64.1005 63.0197 59.7735 57.3358 58.7549L55.5977 58.4434L57.3358 58.1319C63.0197 57.1133 67.4671 52.7863 68.5142 47.257L68.8344 45.566Z" fill="#141414"/>
+            <path d="M31.3576 90.1918L31.1606 89.1509L30.9636 90.1918C30.3191 93.594 27.5823 96.2571 24.0845 96.8839L23.0149 97.0755L24.0845 97.267C27.5823 97.8938 30.3191 100.557 30.9636 103.959L31.1606 105L31.3576 103.959C32.0021 100.557 34.7389 97.8938 38.2367 97.267L39.3063 97.0755L38.2367 96.8839C34.7389 96.2571 32.0021 93.594 31.3576 90.1918Z" fill="#141414"/>
+        </svg>
+        <div class="quality-right-img-1">
+
+        </div>
+        <div class="quality-right-img-2">
+
+        </div>
+        <div class="quality-right-img-3">
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .quality
+    {
+        width: 100%;
+        padding: 80px 100px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .quality-left
+    {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .quality-left h3
+    {
+        width: 90%;
+        text-align: left;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .quality-left p
+    {
+        font-size: 18px;
+        font-weight: 500;
+        color: #818181;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .quality-left-list
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .quality-left-list-item
+    {
+        display: flex;
+        gap: 10px;
+    }
+
+    .quality-right
+    {
+        flex-basis: 50%;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .quality-right-img-1,
+    .quality-right-img-2,
+    .quality-right-img-3
+    {
+        position: absolute;
+        width: 45%;
+        background-color: #FFF;
+        background-image: url("https://i.imgur.com/001SF3d.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .quality-right-img-2,
+    .quality-right-img-3
+    {
+        bottom: 0;
+        border-radius: 50% 50% 0 0;
+    }
+
+    .quality-right-img-1
+    {
+        top: 0;
+        right: 19%;
+        height: 50%;
+        border-radius: 0 0 50% 50%;
+    }
+
+    .quality-right-img-2
+    {
+        left: 5%;
+        height: 60%;
+    }
+
+    .quality-right-img-3
+    {
+        right: 0;
+        height: 50%;
+    }
+
+    .quality-right img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>

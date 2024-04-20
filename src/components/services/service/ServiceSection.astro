@@ -1,0 +1,114 @@
+---
+import ServicesList from "../../react-components/ServicesList";
+
+const accordionItems = [
+    {
+        title: 'Medios ATL',
+        content: 'At the heart of our values is prioritizing our clients. Your satisfaction is paramount, and our highly skilled team goes above and beyond to ensure every property receives exceptional care.At the heart of our values is prioritizing our clients. Your satisfaction is paramount, and our highly skilled team goes above and beyond to ensure every property receives exceptional care.',
+        features: [
+            'Diseño de campañas publicitarias',
+            'Planificación de medios',
+            'Compra de medios'
+        ],
+        image: 'https://i.imgur.com/IkaHLvP.png'
+    },
+    {
+        title: 'Medios BTL',
+        content: 'At the heart of our values is prioritizing our clients. Your satisfaction is paramount, and our highly skilled team goes above and beyond to ensure every property receives exceptional care.At the heart of our values is prioritizing our clients. Your satisfaction is paramount, and our highly skilled team goes above and beyond to ensure every property receives exceptional care.',
+        features: [
+            'Diseño de campañas publicitarias',
+            'Planificación de medios',
+            'Compra de medios'
+        ],
+        image: 'https://i.imgur.com/IkaHLvP.png'
+    },
+    {
+        title: 'Creación e Innovación',
+        content: 'At the heart of our values is prioritizing our clients. Your satisfaction is paramount, and our highly skilled team goes above and beyond to ensure every property receives exceptional care.At the heart of our values is prioritizing our clients. Your satisfaction is paramount, and our highly skilled team goes above and beyond to ensure every property receives exceptional care.',
+        features: [
+            'Diseño de campañas publicitarias',
+            'Planificación de medios',
+            'Compra de medios'
+        ],
+        image: 'https://i.imgur.com/IkaHLvP.png'
+    },
+    {
+        title: 'Diseño',
+        content: 'At the heart of our values is prioritizing our clients. Your satisfaction is paramount, and our highly skilled team goes above and beyond to ensure every property receives exceptional care.At the heart of our values is prioritizing our clients. Your satisfaction is paramount, and our highly skilled team goes above and beyond to ensure every property receives exceptional care.',
+        features: [
+            'Diseño de campañas publicitarias',
+            'Planificación de medios',
+            'Compra de medios'
+        ],
+        image: 'https://i.imgur.com/IkaHLvP.png'
+    },
+    {
+        title: 'Servicios de Marketing',
+        content: 'At the heart of our values is prioritizing our clients. Your satisfaction is paramount, and our highly skilled team goes above and beyond to ensure every property receives exceptional care.At the heart of our values is prioritizing our clients. Your satisfaction is paramount, and our highly skilled team goes above and beyond to ensure every property receives exceptional care.',
+        features: [
+            'Diseño de campañas publicitarias',
+            'Planificación de medios',
+            'Compra de medios'
+        ],
+        image: 'https://i.imgur.com/IkaHLvP.png'
+    }
+];
+---
+
+<section class="service">
+    <div class="service-top">
+        <div class="service-top-title">
+            <h4>Nuestros Servicios</h4>
+            <h2>Damos valor a tu negocio usando de métodos eficientes</h2>
+        </div>
+        <p>
+            Placerat justo amet elit in tincidunt est risus vel purus. A convallis vel bibendum odio nunc. Lectus
+            faucibus ac Lectus faucibus ac in ipsum amet nullam turpis. Lectus faucibus ac Lectus faucibus ac in ipsum
+            amet nullam turpis.
+        </p>
+    </div>
+    <ServicesList
+        client:visible
+        items={accordionItems}
+    />
+</section>
+
+<style>
+    .service
+    {
+        height: 180vh;
+        padding: 70px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .service-top
+    {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 150px;
+    }
+
+    .service-top-title,
+    .service-top p
+    {
+        flex-basis: 50%;
+    }
+
+    .service-top-title h4
+    {
+        color: #8493B6;
+        font-size: 28px;
+    }
+
+    .service-top-title h2
+    {
+        font-size: 40px;
+        font-weight: 700;
+        color: #142133;
+    }
+</style>

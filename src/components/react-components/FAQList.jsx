@@ -1,16 +1,14 @@
 import './css/faqlist.css';
-import { useState } from "react"; // Estilo CSS para el acordeón (opcional)
+import { useState } from "react";
 
-// Componente funcional del acordeón
 const FAQList = ({ items }) => {
     const [expandedIndex, setExpandedIndex] = useState(0);
 
-    // Función para manejar el clic en un ítem
     const handleItemClick = (index) =>
     {
         if (expandedIndex === index)
         {
-            setExpandedIndex(null);
+            setExpandedIndex(index);
         }
         else
         {
