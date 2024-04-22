@@ -5,6 +5,13 @@ import Footer from "../components/shared/Footer.astro";
 import Header from "../components/projects/hero/Header.astro";
 import Services from "../components/projects/service/Service.astro";
 import ProjectsSection from "../components/projects/projects/ProjectsSection.astro";
+
+const links = [
+	{ href: '#about', text: 'Inicio' },
+	{ href: '#services', text: 'Servicios' },
+	{ href: '#projects', text: 'Proyectos' },
+	{ href: '#contact', text: 'Contacto' },
+];
 ---
 
 <Layout title="Conectividad Global">
@@ -13,6 +20,8 @@ import ProjectsSection from "../components/projects/projects/ProjectsSection.ast
 		<Services />
 		<ProjectsSection />
 		<Contact />
-		<Footer />
+		<Footer
+			links={links}
+		/>
 	</main>
 </Layout>

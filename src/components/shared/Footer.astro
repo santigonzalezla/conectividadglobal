@@ -1,13 +1,15 @@
 ---
 import FooterForm from '../react-components/FooterForm';
 
-/*
 interface Props {
-    options: string[];
+    links: {
+        href: string;
+        text: string;
+    }[]
 }
 
-const { options } = Astro.props;
-*/
+const { links } = Astro.props;
+
 ---
 
 <footer class="footer">
@@ -18,10 +20,7 @@ const { options } = Astro.props;
             </div>
             <p>Unlock Your Business's Potential with Our Social Media Solutions</p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                {links.map((link, index) => <li><a href={link.href}>{link.text}</a></li>)}
             </ul>
         </div>
         <div class="footer-top-right">

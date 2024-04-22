@@ -8,6 +8,13 @@ import Quality from "../components/services/quality/Quality.astro";
 import Company from "../components/services/company/Company.astro";
 import ServiceSection from "../components/services/service/ServiceSection.astro";
 import Testimonials from "../components/services/testimonials/Testimonials.astro";
+
+const links = [
+	{ href: '#services', text: 'Servicios' },
+	{ href: '#testimonials', text: 'Testimonios' },
+	{ href: '#faq', text: 'Preguntas Frecuentes' },
+	{ href: '#contact', text: 'Contacto' },
+];
 ---
 
 <Layout title="Conectividad Global">
@@ -19,6 +26,8 @@ import Testimonials from "../components/services/testimonials/Testimonials.astro
 		<Testimonials />
 		<FAQ />
 		<Contact />
-		<Footer />
+		<Footer
+			links={links}
+		/>
 	</main>
 </Layout>

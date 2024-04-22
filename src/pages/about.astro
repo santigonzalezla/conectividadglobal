@@ -6,6 +6,14 @@ import Header from "../components/info/hero/Header.astro";
 import AboutSection from "../components/info/about/AboutSection.astro";
 import Results from "../components/info/results/Results.astro";
 import FAQ from "../components/info/faq/FAQ.astro";
+
+const links = [
+	{ href: '#home', text: 'Inicio' },
+	{ href: '#about', text: 'Acerca De' },
+	{ href: '#results', text: 'Resultados' },
+	{ href: '#faq', text: 'FAQ' },
+	{ href: '#contact', text: 'Contacto' },
+];
 ---
 
 <Layout title="Conectividad Global">
@@ -15,6 +23,8 @@ import FAQ from "../components/info/faq/FAQ.astro";
 		<Results />
 		<FAQ />
 		<Contact />
-		<Footer />
+		<Footer
+			links={links}
+		/>
 	</main>
 </Layout>

@@ -39,7 +39,7 @@ const ResultList = () =>
                         ))}
                     </div>
                     <p>{firstProject.description}</p>
-                    <button>View Project</button>
+                    <button onClick={() => window.location.href = 'projects.html'}>View Project</button>
                 </div>
             </div>
             <div className="result-list-bottom">

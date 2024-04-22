@@ -13,7 +13,7 @@ const { title, text, link, color, index } = Astro.props;
 <div class="card" style={`background: var(--Green-Light, ${color});`}>
     <h3>{title}</h3>
     <p>{text}</p>
-    <button onclick="window.location.href = {link}">Descubre Más ...</button>
+    <a href={link}>Descubre Más...</a>
     <div class="index">{index}</div>
 </div>
 
@@ -60,14 +60,12 @@ const { title, text, link, color, index } = Astro.props;
         font-weight: 700;
     }
 
-    button
+    a
     {
-        font-family: 'Outfit', sans-serif;
+        text-decoration: none;
+        color: #142133;
         font-size: 18px;
         font-weight: 400;
-        border: none;
-        background: transparent;
-        border-radius: 5px;
         cursor: pointer;
         margin-top: 10px;
     }
