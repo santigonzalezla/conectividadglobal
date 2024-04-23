@@ -37,16 +37,25 @@
 
 .contact-form-container button
 {
-    width: 50%;
-    border-radius: 20px;
-    background: #142133;
-    color: #FFF ;
-    cursor: pointer;
-    padding: 20px 30px;
     font-family: 'Outfit', sans-serif;
-    font-size: 18px;
     font-weight: 500;
+    background-color: #142133;
+    color: white;
+    width: 200px;
+    height: 55px;
+    font-size: 16px;
+    padding: 12px 25px;
+    border-radius: 30px;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form-container button:hover
+{
+    transform: scale(1.1);
 }
