@@ -1,5 +1,6 @@
 ---
 import Button from "../../shared/Button.astro";
+import PopupButton from "../../react-components/PopupButton";
 ---
 
 <div class="hero">
@@ -9,13 +10,7 @@ import Button from "../../shared/Button.astro";
     </div>
     <p>Te asesoramos a nuestros clientes para llevar sus mensajes y conectar al público objetivo, seleccionando los medios afines a su estrategia.</p>
     <div class="hero-buttons">
-        <Button
-                text="Conócenos"
-                link="/about"
-                color="dark"
-        >
-
-        </Button>
+        <PopupButton client:visible />
         <Button
                 text="Nuestros servicios"
                 link="/services"

@@ -65,21 +65,6 @@
 .services-list-item-content-left button
 {
     margin-top: 15px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 500;
-    background-color: #142133;
-    color: white;
-    width: 185px;
-    height: 55px;
-    font-size: 16px;
-    padding: 12px 25px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
 }
 
 .services-list-item-content-left button:hover

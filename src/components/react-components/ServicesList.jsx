@@ -1,5 +1,6 @@
 import './css/serviceslist.css';
 import { useState } from "react";
+import PopupButton from "./PopupButton.jsx";
 
 const ServicesList = ({ items }) =>
 {
@@ -43,7 +44,7 @@ const ServicesList = ({ items }) =>
                                         </div>
                                     ))}
                                 </div>
-                                <button>Learn More</button>
+                                <PopupButton />
                             </div>
                             <div className="services-list-item-content-right">
                                 <img src={item.image} alt={item.title} />
