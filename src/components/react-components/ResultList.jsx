@@ -12,21 +12,21 @@ const ResultList = () =>
                 <div className="result-list-top-card">
                     <div className="result-list-top-card-info">
                         <div className="result-list-top-card-info-item">
-                            <p>Client</p>
+                            <p>Cliente</p>
                             <h3>{firstProject.client}</h3>
                         </div>
                         <div className="result-list-top-card-info-item">
-                            <p>Satisfaction</p>
+                            <p>Facebook</p>
                             <h3>{firstProject.satisfaction}</h3>
                         </div>
                     </div>
                     <div className="result-list-top-card-info">
                         <div className="result-list-top-card-info-item">
-                            <p>Scope</p>
+                            <p>Impresiones</p>
                             <h3>{firstProject.scope}</h3>
                         </div>
                         <div className="result-list-top-card-info-item">
-                            <p>ROI</p>
+                            <p>Vistas</p>
                             <h3>{firstProject.roi}</h3>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const ResultList = () =>
                         ))}
                     </div>
                     <p>{firstProject.description}</p>
-                    <button onClick={() => window.location.href = '/projects'}>View Project</button>
+                    <button onClick={() => window.location.href = '/projects'}>Descubre Más</button>
                 </div>
             </div>
             <div className="result-list-bottom">
