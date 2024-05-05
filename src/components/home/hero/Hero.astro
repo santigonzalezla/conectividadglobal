@@ -1,16 +1,21 @@
 ---
 import Button from "../../shared/Button.astro";
-import PopupButton from "../../react-components/PopupButton";
 ---
 
 <div class="hero">
     <div class="hero-top">
         <h3>Agencia de Medios</h3>
-        <h1>Diseñamos estrategias que impactan tu negocio</h1>
+        <h1>Conectamos a nuestros clientes con sus audiencias</h1>
     </div>
-    <p>Te asesoramos a nuestros clientes para llevar sus mensajes y conectar al público objetivo, seleccionando los medios afines a su estrategia.</p>
+    <p>Diseñamos estrategias de Marketing 360, porque no es solo el mensaje, son los medios.</p>
     <div class="hero-buttons">
-        <PopupButton client:visible />
+        <Button
+                text="Cenectemos ahora"
+                link="/about"
+                color="dark"
+        >
+
+        </Button>
         <Button
                 text="Nuestros servicios"
                 link="/services"
