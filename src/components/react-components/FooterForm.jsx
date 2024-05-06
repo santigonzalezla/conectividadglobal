@@ -1,6 +1,6 @@
 import './css/footerform.css';
-//import emailjs from "@emailjs/browser";
-import {useState} from "react";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const FooterForm = () =>
 {
@@ -11,19 +11,16 @@ const FooterForm = () =>
         setEmail("");
     }
 
-    const handleSubmit = (e) =>
+    const handleSubmit = async (e) =>
     {
         e.preventDefault();
-        /*
         emailjs
-            .sendForm("service_po94d02", "template_uhfqpob", e.target, "p9sy5KN1V1jg0pnLd")
-            .then((response) =>
-            {
+            .sendForm("service_po94d02", "template_r5cew93", e.target, "p9sy5KN1V1jg0pnLd")
+            .then((response) => {
                 console.log(response);
                 cleanForm();
             })
             .catch((error) => console.log(error));
-        */
     }
 
     return (
@@ -31,16 +28,21 @@ const FooterForm = () =>
             <form onSubmit={handleSubmit}>
                 <input
                     type="email"
-                    name="user_email"
                     value={email}
+                    name="user_email"
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Escribe tu correo electrónico"
+                    placeholder="Escribe tu correo"
                     required
                 />
                 <input
                     hidden
+                    name="user_name"
+                    defaultValue="Suscripción a Newsletter"
+                />
+                <input
+                    hidden
                     name="user_message"
-                    defaultValue={"Suscripción a Newsletter"}
+                    defaultValue={`${email} se ha suscrito a la newsletter`}
                 />
                 <button type="submit">Suscríbete</button>
             </form>

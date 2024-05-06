@@ -1,6 +1,6 @@
 ---
 import ProjectList from "../../react-components/ProjectList";
-import Button from "../../shared/Button.astro";
+import PopupButton from "../../react-components/PopupButton";
 ---
 
 <section class="projects" id="projects">
@@ -23,12 +23,8 @@ import Button from "../../shared/Button.astro";
     </div>
     <div class="projects-bottom">
         <div class="projects-bottom-info">
-            <h1>Te acompañamos con soluciones innovadoras para construir relaciones auténticas con tus audiencias. Conectemos ahora</h1>
-            <Button
-                    text="Contáctanos"
-                    link="#Contact"
-                    color="dark"
-            />
+            <h1>Te acompañamos con soluciones innovadoras para construir relaciones con tu audiencia.</h1>
+            <PopupButton client:visible />
         </div>
         <div class="circle-1"></div>
         <div class="circle-2"></div>
@@ -141,7 +137,7 @@ import Button from "../../shared/Button.astro";
     {
         font-size: 42px;
         font-weight: 700;
-        flex-basis: 60%;
+        flex-basis: 75%;
         color: #FFF;
     }
 
