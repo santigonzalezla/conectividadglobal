@@ -1,14 +1,15 @@
 ---
 
----
+import Scroll from "../../shared/Scroll.astro";
+import ScrollLeft from "../../shared/ScrollLeft.astro";---
 
 <div class="company">
     <h3>Miles de Clientes confían en nosotros</h3>
     <div class="company-banner">
-
+        <Scroll />
     </div>
     <div class="company-banner">
-
+        <ScrollLeft />
     </div>
 </div>
 
@@ -34,7 +35,6 @@
 
     .company-banner
     {
-        background: #FFF;
         height: 100px;
         width: 100%;
         border-radius: 10px;

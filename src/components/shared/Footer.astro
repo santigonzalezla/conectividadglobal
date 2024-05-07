@@ -132,4 +132,43 @@ const { links } = Astro.props;
         align-items: center;
         justify-content: space-between;
     }
+
+    @media (max-width: 768px)
+    {
+        footer
+        {
+            padding: 60px 20px;
+        }
+
+        .footer-top
+        {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .footer-top-left
+        {
+            flex-basis: 100%;
+        }
+
+        .footer-top-right
+        {
+            flex-basis: 100%;
+        }
+
+        .footer-top-right p
+        {
+            text-align: center;
+        }
+
+        .footer-bottom
+        {
+            gap: 10px;
+        }
+
+        .footer-bottom-info
+        {
+            font-size: 10px;
+        }
+    }
 </style>

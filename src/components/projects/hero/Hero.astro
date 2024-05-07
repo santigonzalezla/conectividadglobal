@@ -1,19 +1,14 @@
 ---
-import Button from "../../shared/Button.astro";
+import PopupButton from "../../react-components/PopupButton";
 ---
 
 <div class="hero">
     <div class="hero-top">
         <h3>Impulsa tu presencia en redes sociales con los servicios expertos de Conectividad Global</h3>
         <p>
-            En Conectividad Global, comprendemos la importancia de las redes sociales en el panorama empresarial actual. Es por eso que ofrecemos servicios expertos diseñados para impulsar tu presencia en redes sociales. Desde la planificación hasta la ejecución de estrategias de contenido efectivas, nuestro equipo de especialistas te proporciona las herramientas y el conocimiento necesarios para destacar en el mundo digital.
+            En Conectividad Global, comprendemos la importancia de las redes sociales en el panorama empresarial actual. Es por eso que nuestro equipo de especialistas te proporciona las herramientas necesarias para destacar en el mundo digital.
         </p>
-        <Button
-                text="Conoce Más"
-                link="#Info"
-                color="dark"
-        >
-        </Button>
+        <PopupButton client:visible/>
     </div>
     <div class="hero-bottom">
         <div class="hero-bottom-left">
@@ -74,8 +69,8 @@ import Button from "../../shared/Button.astro";
 
     .hero-top p
     {
-        width: 75%;
-        font-size: 20px;
+        width: 90%;
+        font-size: 18px;
         font-weight: 200;
         color: #818181;
     }

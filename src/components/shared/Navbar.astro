@@ -14,6 +14,20 @@ const { options } = Astro.props;
     <div class="img-container">
         <img onclick="window.location.href = 'index.html'" src='https://i.imgur.com/0EZ41J4.png' alt='Logo'/>
     </div>
+    <input type="checkbox" id="check"/>
+    <label for="check" class="icons">
+        <svg class="menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 6l16 0"></path>
+            <path d="M4 12l16 0"></path>
+            <path d="M4 18l16 0"></path>
+        </svg>
+        <svg class="close" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+        </svg>
+    </label>
     <div class="option-container">
         <ul>
             <li><a href="/">Inicio</a></li>
@@ -108,28 +122,26 @@ const { options } = Astro.props;
     {
         nav
         {
-            padding: 30px 30px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        ul
+        img
         {
-            display: none;
-            position: absolute;
-            top: 0;
-            right: 5%;
-            gap: 10px;
-            flex-direction: column;
-            align-items: flex-end;
-            width: 30%;
-            margin-top: 60px;
-            z-index: 3;
-            transition: 1s all ease-in-out;
+            width: 70px;
+            cursor: pointer;
         }
 
         .icons
         {
-            display: block;
-            right: 0;
+            display: flex;
+        }
+
+        .option-container
+        {
+            display: none;
         }
 
         #check:checked~.icons .menu
@@ -139,15 +151,41 @@ const { options } = Astro.props;
 
         #check:checked~.icons .close
         {
-            display: block;
+            display: flex;
         }
 
-        #check:checked~ul
+        #check:checked~.option-container
         {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 100vh;
+            background: #142133;
             display: flex;
-            background: #45749C;
-            border-radius: 20px;
-            padding: 20px;
+            align-items: center;
+            z-index: 1;
+            transition: 1s left ease-in-out;
+        }
+
+        #check:checked~.option-container ul
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            font-size: 30px;
+            color: #FFF;
+            padding: 30px;
+            align-items: flex-start;
+            z-index: 1;
+            transition: 1s left ease-in-out;
+        }
+
+        #check:checked~.option-container a
+        {
+            text-align: left;
         }
 
         .close
@@ -155,7 +193,7 @@ const { options } = Astro.props;
             display: none;
         }
 
-        button
+        .button-container
         {
             display: none;
         }

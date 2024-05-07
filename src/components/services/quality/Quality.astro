@@ -1,24 +1,21 @@
 ---
-import Button from "../../shared/Button.astro";
+import PopupButton from "../../react-components/PopupButton";
 
 const items = [
     {
-        text: "Te acompañamos con soluciones innovadoras para construir relaciones auténticas con tus audiencias."
+        text: "Te acompañamos con soluciones innovadoras para construir relaciones con tu audiencia."
     },
     {
-        text: "Optimizamos tus recursos."
-    },
-    {
-        text: "Entregamos insights para tomar decisiones."
+        text: "Optimizamos tus recursos y entregamos insights para tomar decisiones."
     },
     {
         text: "Establecemos conexiones que perduran con el tiempo."
     },
     {
-        text: "Proporcionamos análisis profundos y precisos que te permitan tomar decisiones adecuadas."
+        text: "Proporcionamos análisis precisos que te permitan tomar decisiones adecuadas."
     },
     {
-        text: "Adoptamos un enfoque multicanal para alcanzar a tu audiencia en todos los puntos de contacto relevantes"
+        text: "Adoptamos un enfoque multicanal para alcanzar a tu audiencia en todos los puntos de contacto."
     }
 ]
 ---
@@ -44,11 +41,7 @@ const items = [
                     </div>
             ))}
         </div>
-        <Button
-                text="Conectemos ahora"
-                color="dark"
-                link="#services"
-        />
+        <PopupButton client:visible/>
     </div>
     <div class="quality-right">
         <svg xmlns="http://www.w3.org/2000/svg" width="83" height="105" viewBox="0 0 83 105" fill="none" style="position:absolute; top: 30%; right: 15%; z-index: 1">
@@ -82,6 +75,7 @@ const items = [
         display: flex;
         align-items: center;
         justify-content: space-between;
+        background: rgba(132, 147, 182, 0.2);
     }
 
     .quality-left

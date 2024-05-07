@@ -37,3 +37,23 @@
     color: #FFF ;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px)
+{
+    .footer-form
+    {
+        width: 100%;
+    }
+
+    .footer-form form
+    {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .footer-form input,
+    .footer-form button
+    {
+        font-size: 14px;
+    }
+}

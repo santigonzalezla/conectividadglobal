@@ -10,7 +10,7 @@ import ServiceCard from "./ServiceCard.astro";
             <h1>Conoce todas las posibilidades que ofrecemos en diferentes medios.</h1>
         </div>
         <div class="service-top-right">
-            <p>We have 26+ other services</p>
+            <p>Ofrecemos una amplia gama de servicios</p>
             <Button
                 text="Descubre Más"
                 color="dark"
@@ -105,6 +105,8 @@ import ServiceCard from "./ServiceCard.astro";
         color: #142133;
         font-size: 16px;
         font-weight: 200;
+        width: 35%;
+        text-align: right;
     }
 
     .service-bottom
@@ -117,7 +119,8 @@ import ServiceCard from "./ServiceCard.astro";
     .service-cards
     {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
         gap: 70px;
     }
 
@@ -138,7 +141,48 @@ import ServiceCard from "./ServiceCard.astro";
     /*Mobile*/
     @media (max-width: 768px)
     {
+        .service
+        {
+            padding: 65px 20px;
+            height: 100%;
+        }
 
+        .service-top
+        {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .service-top-left
+        {
+            flex-basis: 100%;
+        }
+
+        .service-top-right
+        {
+            display: none;
+        }
+
+        .service-bottom
+        {
+            gap: 40px;
+        }
+
+        .service-cards
+        {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        h1
+        {
+            font-size: 25px;
+        }
+
+        h3
+        {
+            font-size: 20px;
+        }
     }
 
     /*Tablets*/

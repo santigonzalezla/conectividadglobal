@@ -55,11 +55,6 @@
 
 @media screen and (max-width: 767px)
 {
-    .popup-button
-    {
-        width: 40%;
-    }
-
     .popup-modal
     {
         margin: 0;
