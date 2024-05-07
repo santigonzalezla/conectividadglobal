@@ -3,7 +3,7 @@ import Navbar from '../../shared/Navbar.astro';
 import Hero from "./Hero.astro";
 ---
 
-<header>
+<header id="hero">
     <Navbar />
     <Hero />
 </header>
@@ -22,9 +22,9 @@ import Hero from "./Hero.astro";
 
     @media (max-width: 768px)
     {
-        img
+        header
         {
-            display: none;
+            padding: 20px;
         }
     }
 

@@ -107,3 +107,21 @@
     object-fit: cover;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 768px)
+{
+    .services-list-item-content
+    {
+        padding: 0;
+    }
+
+    .services-list-item-content-left
+    {
+        flex-basis: 100%;
+    }
+
+    .services-list-item-content-right
+    {
+        display: none;
+    }
+}

@@ -2,7 +2,7 @@
 
 ---
 
-<div class="service">
+<div class="service" id="services">
     <div class="service-top">
         <h3>Somos Conectividad Global</h3>
         <h1>Eleva la presencia de tu marca con Innovación hasta alcanzar éxito sin precendentes</h1>
@@ -122,45 +122,33 @@
         color: #818181;
     }
 
-    @media screen and (max-width: 767px)
+    @media screen and (max-width: 768px)
     {
-        .hero
+        .service
+        {
+            padding: 50px 20px;
+        }
+
+        .service-top h3
         {
             width: 100%;
-            padding: 30px;
+            font-size: 20px;
         }
 
-        h1
+        .service-top h1
         {
             width: 100%;
-            font-size: 40px;
+            font-size: 26px;
         }
 
-        p
+        .service-info
+        {
+            padding: 50px 20px;
+        }
+
+        .service-info-card
         {
             width: 100%;
-            font-size: 16px;
-        }
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1024px)
-    {
-        .hero
-        {
-            width: 100%;
-            padding: 30px 65px;
-        }
-
-        h1
-        {
-            width: 50%;
-            font-size: 40px;
-        }
-
-        p
-        {
-            width: 50%;
-            font-size: 16px;
         }
     }
 </style>

@@ -3,7 +3,7 @@ import Button from "../../shared/Button.astro";
 import TestimonialCard from "./TestimonialCard.astro";
 ---
 
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
     <div class="testimonials-left">
         <div class="testimonials-left-top">
             <h4>Testimonios</h4>
@@ -282,5 +282,41 @@ import TestimonialCard from "./TestimonialCard.astro";
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    @media (max-width: 768px)
+    {
+        .testimonials
+        {
+            padding: 50px 20px;
+            gap: 50px;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .testimonials-right
+        {
+            gap: 30px;
+        }
+
+        .testimonials-left-top h2
+        {
+            font-size: 30px;
+        }
+
+        .testimonials-left-top p
+        {
+            font-size: 16px;
+        }
+
+        .testimonials-left-bottom h4
+        {
+            font-size: 18px;
+        }
+
+        .testimonials-left-bottom-partners-section-item
+        {
+            padding: 15px 10px;
+        }
     }
 </style>

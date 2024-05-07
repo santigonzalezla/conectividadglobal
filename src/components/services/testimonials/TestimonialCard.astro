@@ -114,4 +114,24 @@ const { name, title, description, image, icon } = Astro.props;
         height: 1.5rem;
         fill: #666;
     }
+
+    @media (max-width: 768px)
+    {
+        .card
+        {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card-image
+        {
+            flex-basis: 100%;
+        }
+
+        .card-info
+        {
+            flex-basis: 100%;
+        }
+    }
 </style>

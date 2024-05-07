@@ -55,7 +55,7 @@ const accordionItems = [
 ];
 ---
 
-<section class="service">
+<section class="service" id="services">
     <div class="service-top">
         <div class="service-top-title">
             <h4>Nuestros Servicios</h4>
@@ -108,5 +108,36 @@ const accordionItems = [
         font-size: 40px;
         font-weight: 700;
         color: #142133;
+    }
+
+    @media screen and (max-width: 768px)
+    {
+        .service
+        {
+            padding: 70px 20px;
+            height: auto;
+        }
+
+        .service-top
+        {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .service-top-title,
+        .service-top p
+        {
+            flex-basis: 100%;
+        }
+
+        .service-top-title h2
+        {
+            font-size: 30px;
+        }
+
+        .service-top p
+        {
+            font-size: 14px;
+        }
     }
 </style>

@@ -279,3 +279,193 @@
     flex-direction: column;
     gap: 20px;
 }
+
+@media screen and (max-width: 768px)
+{
+    .project-item img
+    {
+        height: 300px;
+    }
+
+    .project-item-description
+    {
+        padding: 30px;
+    }
+
+    .project-item-description p
+    {
+        font-size: 14px;
+    }
+
+    .project-item-top
+    {
+        gap: 20px;
+    }
+
+    .project-item-top h2
+    {
+        font-size: 16px;
+    }
+
+    .project-item-top-button span
+    {
+        display: none;
+    }
+
+    .project-item-top-button-icon
+    {
+        padding: 15px;
+    }
+
+    .project-item-top-button svg
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+    .project-features
+    {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .project-feature-item
+    {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .project-item-info-container
+    {
+        padding: 40px 30px;
+    }
+
+    .project-item-info-top
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-item-info-top h2
+    {
+        font-size: 16px;
+    }
+
+    .project-item-info-top p
+    {
+        font-size: 13px;
+    }
+
+    .project-item-info-data
+    {
+        padding: 15px 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-item-info-team-area
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-item-info-data-item-first,
+    .project-item-info-data-item
+    {
+        width: 80%;
+        padding: 5px 10px;
+        border-left: none;
+        align-items: center;
+    }
+
+    .project-item-info-team-area-info-imgs
+    {
+        display: none;
+    }
+
+    .project-item-info-results-data
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-item-info-results-data-item-first,
+    .project-item-info-results-data-item
+    {
+        width: 100%;
+        padding: 5px 10px;
+        border-left: none;
+        align-items: center;
+    }
+
+    .project-item-info-results-comments p
+    {
+        font-size: 14px;
+    }
+
+    .project-item-info-data-item
+    {
+        border-top: 1px solid #0E1621;
+    }
+
+    .project-item-info-data-item h3
+    {
+        font-size: 18px;
+    }
+
+    .project-item-info-data-item p,
+    .project-item-info-data-item-first p
+    {
+        font-size: 16px;
+    }
+
+    .project-item-info-team
+    {
+        padding: 30px;
+    }
+
+    .project-item-info-team-area-info
+    {
+        padding: 20px;
+    }
+
+    .project-item-info-team-area-info-data
+    {
+        gap: 5px;
+    }
+
+    .project-item-info-team-area-info-imgs img
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .project-item-info-team-area-info-names
+    {
+        font-size: 14px;
+    }
+
+    .project-item-info-results
+    {
+        padding: 30px;
+    }
+
+    .project-item-info-results-data-item-first,
+    .project-item-info-results-data-item
+    {
+        padding: 0 20px;
+    }
+
+    .project-item-info-results-data-item-first p,
+    .project-item-info-results-data-item p
+    {
+        font-size: 14px;
+    }
+
+    .project-item-info-results-data-item-first span,
+    .project-item-info-results-data-item span
+    {
+        font-weight: 600;
+    }
+}
