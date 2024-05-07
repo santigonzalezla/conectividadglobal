@@ -177,20 +177,64 @@ import Button from "../../shared/Button.astro";
         .hero
         {
             width: 100%;
-            padding: 30px;
+            padding: 0 10px;
         }
 
-        h1
+        .hero-top
+        {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .hero-top h3
         {
             width: 100%;
-            font-size: 40px;
+            font-size: 30px;
+        }
+
+        .hero-top p
+        {
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .hero-top svg
+        {
+            display: none;
+        }
+
+        .hero-top-right
+        {
+            flex-direction: column;
+        }
+
+        .hero-top-right-bottom
+        {
+            justify-content: space-between;
+        }
+
+        .hero-top-right-bottom-item
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-top-right-bottom-item h1
+        {
+            font-size: 25px;
+        }
+
+        .hero-top-right-bottom-item p
+        {
+            font-size: 12px;
         }
 
         p
         {
             width: 100%;
-            font-size: 16px;
+            font-size: 14px;
         }
+
     }
 
     @media screen and (min-width: 768px) and (max-width: 1024px)

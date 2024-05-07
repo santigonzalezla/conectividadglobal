@@ -2,7 +2,7 @@
 
 ---
 
-<section class="about">
+<section class="about" id="about">
     <div class="about-left">
         <div class="about-left-back">
             <div class="about-left-container">
@@ -194,5 +194,45 @@
         position: relative;
         display: flex;
         align-items: center;
+    }
+
+    @media screen and (max-width: 1024px)
+    {
+        .about
+        {
+            flex-direction: column;
+            padding: 50px 30px;
+            height: 100vh;
+        }
+
+        .about-right h4
+        {
+            font-size: 24px;
+        }
+
+        .about-right h2
+        {
+            font-size: 30px;
+        }
+
+        .about-right-benefits
+        {
+            gap: 50px;
+        }
+
+        .about-right-benefits-item h5
+        {
+            font-size: 20px;
+        }
+
+        .about-right-benefits-item p
+        {
+            font-size: 12px;
+        }
+
+        .about-left
+        {
+            display: none;
+        }
     }
 </style>

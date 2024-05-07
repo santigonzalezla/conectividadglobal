@@ -32,14 +32,9 @@ const ResultList = () =>
                     </div>
                 </div>
                 <div className="result-list-top-info">
-                    <h2>{firstProject.name}</h2>
-                    <div className="result-list-top-info-features">
-                        {firstProject.features.map((feature, index) => (
-                            <span key={index}>{feature.name}</span>
-                        ))}
-                    </div>
-                    <p>{firstProject.description}</p>
-                    <button onClick={() => window.location.href = '/projects'}>Descubre Más</button>
+                    <ResultItem
+                        project={firstProject}
+                    />
                 </div>
             </div>
             <div className="result-list-bottom">
