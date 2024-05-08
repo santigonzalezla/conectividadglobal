@@ -52,3 +52,11 @@
     font-size: 14px;
     font-weight: 200;
 }
+
+@media screen and (max-width: 768px)
+{
+    .item-top-title h4
+    {
+        font-size: 17px;
+    }
+}
