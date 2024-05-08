@@ -12,7 +12,7 @@ const ResultItem = ({ project }) =>
                 ))}
             </div>
             <p>{project.description}</p>
-            <button onClick={() => window.location.href = 'projects.html'}>Descubre Más</button>
+            <button onClick={() => window.location.href = '/projects'}>Descubre Más</button>
         </div>
     );
 }
