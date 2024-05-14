@@ -26,7 +26,6 @@ const ContactForm = ({notification}) =>
     const handleSubmit = (e) =>
     {
         e.preventDefault();
-        /*
         emailjs
             .sendForm("service_po94d02", "template_r5cew93", e.target, "p9sy5KN1V1jg0pnLd")
             .then((response) => {
@@ -34,7 +33,6 @@ const ContactForm = ({notification}) =>
                 clearForm();
             })
             .catch((error) => console.log(error));
-        */
         setBanner(true);
         setTimeout(() => setBanner(false), 2500);
     }
