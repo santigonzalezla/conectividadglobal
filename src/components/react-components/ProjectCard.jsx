@@ -1,7 +1,7 @@
 const ProjectCard = ({project, index, isOpen, onClick}) =>
 {
     return (
-        <div className="item" key={index} style={{ background: isOpen ? '#142133' : 'rgba(20,33,51,0.9)' }}>
+        <div className={`item ${isOpen ? "open" : ""}`} key={index} style={{ background: isOpen ? '#142133' : 'rgba(20,33,51,0.9)' }}>
             <div className="item-top">
                 <div className="item-top-title">
                     <h1>{project.index}</h1>
@@ -23,7 +23,7 @@ const ProjectCard = ({project, index, isOpen, onClick}) =>
                 )}
             </div>
             {isOpen && (
-                <div className="item-bottom">
+                <div className="item-bottom open">
                     <p>{project.description}</p>
                 </div>
             )}

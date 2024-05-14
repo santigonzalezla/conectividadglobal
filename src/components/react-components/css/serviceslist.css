@@ -80,6 +80,7 @@
     border: none;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    animation: slide 1s ease-in-out backwards;
 }
 
 .services-list-item-content-left button:hover
@@ -93,6 +94,7 @@
     color: rgba(20, 20, 20, 0.75);
     font-size: 18px;
     font-weight: 400;
+    animation: slide 1s ease-in-out backwards;
 }
 
 .services-list-item-content-right
@@ -106,6 +108,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
+    animation: slide 1s ease-in-out backwards;
 }
 
 @media screen and (max-width: 768px)
@@ -123,5 +126,15 @@
     .services-list-item-content-right
     {
         display: none;
+    }
+}
+
+@keyframes slide
+{
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

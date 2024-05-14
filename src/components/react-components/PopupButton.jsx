@@ -15,7 +15,7 @@ const PopupButton = () =>
     };
 
     // URL de tu evento de Calendly
-    const calendlyURL = 'https://calendly.com/conectividad-global-mercadeo/30min';
+    const calendlyURL = 'https://calendly.com/conectividad-global-mercadeo/agenda-una-reunion-con-nosotros';
 
     return (
         <div>

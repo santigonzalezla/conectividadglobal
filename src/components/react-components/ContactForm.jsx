@@ -1,12 +1,14 @@
 import './css/contactform.css';
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import NotificationBanner from './NotificationBanner';
 
-const ContactForm = () =>
+const ContactForm = ({notification}) =>
 {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [banner, setBanner] = useState(false);
 
     const clearForm = () =>
     {
@@ -24,6 +26,7 @@ const ContactForm = () =>
     const handleSubmit = (e) =>
     {
         e.preventDefault();
+        /*
         emailjs
             .sendForm("service_po94d02", "template_r5cew93", e.target, "p9sy5KN1V1jg0pnLd")
             .then((response) => {
@@ -31,11 +34,13 @@ const ContactForm = () =>
                 clearForm();
             })
             .catch((error) => console.log(error));
+        */
+        setBanner(true);
+        setTimeout(() => setBanner(false), 2500);
     }
 
     return (
         <div className="contact-form">
-            <h1>Contáctanos</h1>
             <form className="contact-form-container" onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -62,6 +67,8 @@ const ContactForm = () =>
                     <span>Enviar Mensaje</span>
                 </button>
             </form>
+
+            {banner && <NotificationBanner />}
         </div>
     );
 }
