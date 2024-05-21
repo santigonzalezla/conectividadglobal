@@ -1,7 +1,7 @@
 const projects = [
     {
         index: "01",
-        image: "https://i.imgur.com/001SF3d.png",
+        image: "https://i.imgur.com/ihNbUpW.jpg",
         name: "Godoy Córdoba - Video entrevista y contenido en Portafolio",
         description: "Junto a Portafolio creamos contenido y una video-entrevista para destacar el expertisede Godoy Córdoba, asegurando réplicas digitales para maximizar la visibilidad y el impacto de la marca en portafolio.co",
         features: [
@@ -63,14 +63,14 @@ const projects = [
                 ],
             }
         ],
-        satisfaction: "859 posts",
+        satisfaction: "6.867",
         scope: "150.000",
-        roi: "6.867",
+        roi: "859 posts",
         comments: "Estamos muy contentos con el resultado del proyecto dado que se entregó en tiempo y forma. Adicionalmente, el equipo de trabajo fue muy profesional y atento a nuestras necesidades.",
     },
     {
         index: "02",
-        image: "https://i.imgur.com/001SF3d.png",
+        image: "https://i.imgur.com/gx2B1R2.jpg",
         name: "Camara Colombiana de la Infraestructura",
         description: "Como parte de nuestra estrategia para promover el Congreso de Infraestructura, publicamos un aviso de pauta comercial Revista Semana, alcanzando una audiencia ámplia.",
         features: [
@@ -132,14 +132,14 @@ const projects = [
                 ],
             }
         ],
-        satisfaction: "80%",
-        scope: "80%",
-        roi: "500USD",
+        satisfaction: "1.17MM",
+        scope: "N/A",
+        roi: "N/A",
         comments: "Estamos muy contentos con el resultado del proyecto dado que se entregó en tiempo y forma. Adicionalmente, el equipo de trabajo fue muy profesional y atento a nuestras necesidades.",
     },
     {
         index: "03",
-        image: "https://i.imgur.com/001SF3d.png",
+        image: "https://i.imgur.com/7FEC7ak.jpg",
         name: "Natugas- Contenido en Portafolio",
         description: "En estrecha colaboración con Portafolio, creamos un contenido impactante para Naturgas, resaltando su papel como habilitador de la movilidad sostenible en el segmento de carga pesada.",
         features: [
@@ -201,14 +201,14 @@ const projects = [
                 ],
             }
         ],
-        satisfaction: "80%",
-        scope: "80%",
-        roi: "500USD",
+        satisfaction: "75.000",
+        scope: "N/A",
+        roi: "50.000 impresiones",
         comments: "Estamos muy contentos con el resultado del proyecto dado que se entregó en tiempo y forma. Adicionalmente, el equipo de trabajo fue muy profesional y atento a nuestras necesidades.",
     },
     {
         index: "04",
-        image: "https://i.imgur.com/001SF3d.png",
+        image: "https://i.imgur.com/9Gai6ZH.jpg",
         name: "Summum Projects - Contenido y Video Entrevista en Portafolio",
         description: "En asociación con Portafolio, llevamos a cabo una estrategia digital para aumentar la visibilidad de la marca Summum ",
         features: [
@@ -270,9 +270,9 @@ const projects = [
                 ],
             }
         ],
-        satisfaction: "80%",
-        scope: "80%",
-        roi: "500USD",
+        satisfaction: "75.000",
+        scope: "N/A",
+        roi: "100.000 impresiones",
         comments: "Estamos muy contentos con el resultado del proyecto dado que se entregó en tiempo y forma. Adicionalmente, el equipo de trabajo fue muy profesional y atento a nuestras necesidades.",
     }
 ];

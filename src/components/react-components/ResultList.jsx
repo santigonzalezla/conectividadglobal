@@ -16,7 +16,7 @@ const ResultList = () =>
                             <h3>{firstProject.client}</h3>
                         </div>
                         <div className="result-list-top-card-info-item">
-                            <p>Facebook</p>
+                            <p>Vistas</p>
                             <h3>{firstProject.satisfaction}</h3>
                         </div>
                     </div>
@@ -26,7 +26,7 @@ const ResultList = () =>
                             <h3>{firstProject.scope}</h3>
                         </div>
                         <div className="result-list-top-card-info-item">
-                            <p>Vistas</p>
+                            <p>Facebook</p>
                             <h3>{firstProject.roi}</h3>
                         </div>
                     </div>

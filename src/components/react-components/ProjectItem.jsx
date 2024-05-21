@@ -62,54 +62,19 @@ const ProjectItem = ({project, index, isOpen, onClick}) =>
                                     <h3>{project.enddate}</h3>
                                 </div>
                             </div>
-                            <div className="project-item-info-team">
-                                <h2>Equipo de Trabajo</h2>
-                                <div className="project-item-info-team-area">
-                                    {project.teams.map((team, teamIndex) => (
-                                        <div key={teamIndex} className="project-item-info-team-area-info">
-                                            <h3>{team.name}</h3>
-                                            <div className="project-item-info-team-area-info-data">
-                                                <div className="project-item-info-team-area-info-imgs">
-                                                    {team.data.map((item, imgIndex) => (
-                                                        <img
-                                                            src={item.image}
-                                                            alt={item.name}
-                                                            key={imgIndex}
-                                                            onClick={() => console.log(imgIndex)}
-                                                            style={{
-                                                                marginLeft: imgIndex === 0 ? "0" : "-20px",
-                                                            }}
-                                                        />
-                                                    ))}
-                                                </div>
-                                                <div className="project-item-info-team-area-info-names">
-                                                    {team.data.map((item, nameIndex) => (
-                                                        <p key={nameIndex}>
-                                                            {item.name}{nameIndex !== team.data.length - 1 ? ', ' : ''}
-                                                        </p>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
+                            
                             <div className="project-item-info-results">
                                 <h2>Resultados del Proyecto</h2>
                                 <div className="project-item-info-results-data">
                                     <div className="project-item-info-results-data-item-first">
-                                        <p><span>Satisfacción del Cliente:</span> {project.satisfaction}</p>
+                                        <p><span>Lectores:</span> {project.satisfaction}</p>
                                     </div>
                                     <div className="project-item-info-results-data-item">
-                                        <p><span>Alcance del Proyecto:</span> {project.scope}</p>
+                                        <p><span>Espectadores:</span> {project.scope}</p>
                                     </div>
                                     <div className="project-item-info-results-data-item">
-                                        <p><span>Retorno de Inversión:</span> {project.roi}</p>
+                                        <p><span>Métricas:</span> {project.roi}</p>
                                     </div>
-                                </div>
-                                <div className="project-item-info-results-comments">
-                                    <h3>Comentarios del Cliente</h3>
-                                    <p>{project.comments}</p>
                                 </div>
                             </div>
                         </div>
