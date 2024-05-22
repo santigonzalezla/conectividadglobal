@@ -22,6 +22,11 @@
     justify-content: space-between;
 }
 
+.services-list-item-header span
+{
+    cursor: pointer;
+}
+
 .services-list-item-header h4
 {
     font-size: 40px;

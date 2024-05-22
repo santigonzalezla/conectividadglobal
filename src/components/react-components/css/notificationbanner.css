@@ -1,6 +1,6 @@
 .banner
 {
-    top: 100px;
+    top: 20px;
     left: calc(50% - 30%);
     width: 60%;
     position: absolute;
@@ -13,4 +13,34 @@
     border: 3px solid #4CAF50;
     background-color: rgba(76, 175, 80, 0.7);
     color: white;
+    animation: show 1s ease;
+}
+
+.unshow
+{
+    animation: unshow 3.5s ease;
+}
+
+@keyframes show
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes unshow
+{
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
 }

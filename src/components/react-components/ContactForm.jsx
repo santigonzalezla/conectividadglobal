@@ -9,6 +9,7 @@ const ContactForm = ({notification}) =>
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [banner, setBanner] = useState(false);
+    const [bannerClass, setBannerClass] = useState("");
 
     const clearForm = () =>
     {
@@ -30,11 +31,16 @@ const ContactForm = ({notification}) =>
             .sendForm("service_po94d02", "template_r5cew93", e.target, "p9sy5KN1V1jg0pnLd")
             .then((response) => {
                 console.log(response);
+                setBanner(true);
                 clearForm();
             })
             .catch((error) => console.log(error));
-        setBanner(true);
-        setTimeout(() => setBanner(false), 2500);
+
+        setTimeout(() =>
+        {
+            setBanner(false);
+            setBannerClass("unshow");
+        }, 2500);
     }
 
     return (
@@ -66,7 +72,7 @@ const ContactForm = ({notification}) =>
                 </button>
             </form>
 
-            {banner && <NotificationBanner />}
+            {banner && <NotificationBanner bannerClass={bannerClass} />}
         </div>
     );
 }
