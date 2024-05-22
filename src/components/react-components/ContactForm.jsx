@@ -3,7 +3,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import NotificationBanner from './NotificationBanner';
 
-const ContactForm = ({notification}) =>
+const ContactForm = () =>
 {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
