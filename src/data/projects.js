@@ -2,6 +2,7 @@ const projects = [
     {
         index: "01",
         image: "https://i.imgur.com/ihNbUpW.jpg",
+        videoUrl: "https://www.youtube.com/embed/YfaTY3vlhOI?si=MgeC0jmer2gXtwLH",
         name: "Godoy Córdoba - Video entrevista y contenido en Portafolio",
         description: "Junto a Portafolio creamos contenido y una video-entrevista para destacar el expertisede Godoy Córdoba, asegurando réplicas digitales para maximizar la visibilidad y el impacto de la marca en portafolio.co",
         features: [
@@ -209,6 +210,7 @@ const projects = [
     {
         index: "04",
         image: "https://i.imgur.com/9Gai6ZH.jpg",
+        videoUrl: "https://www.youtube.com/embed/gB24HjWAejU?si=RBz-Bt0Y-_HoEz3z",
         name: "Summum Projects - Contenido y Video Entrevista en Portafolio",
         description: "En asociación con Portafolio, llevamos a cabo una estrategia digital para aumentar la visibilidad de la marca Summum ",
         features: [

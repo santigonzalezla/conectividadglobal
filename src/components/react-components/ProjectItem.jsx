@@ -4,7 +4,25 @@ const ProjectItem = ({project, index, isOpen, onClick}) =>
 {
     return (
         <div className="project-item" key={index}>
-            <img src={project.image} alt={project.name}/>
+            {project.videoUrl ? (
+                 <iframe
+                 width="640"
+                 height="360"
+                 src={project.videoUrl}
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                 allowFullScreen
+                 title={project.name}
+             ></iframe>
+         ) : project.image ? (
+             <img
+                 src={project.image}
+                 alt={project.name}
+                 width="640"
+                 height="360"
+             />
+         ) : (
+             <p>No media available</p>
+         )}
             <div className="project-item-top">
                 <h2>{project.name}</h2>
                 <button className="project-item-top-button" onClick={onClick}>
