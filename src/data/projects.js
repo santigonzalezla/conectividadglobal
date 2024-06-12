@@ -1,10 +1,9 @@
 const projects = [
     {
         index: "01",
-        image: "https://i.imgur.com/ihNbUpW.jpg",
-        videoUrl: "https://www.youtube.com/embed/YfaTY3vlhOI?si=MgeC0jmer2gXtwLH",
-        name: "Godoy Córdoba - Video entrevista y contenido en Portafolio",
-        description: "Junto a Portafolio creamos contenido y una video-entrevista para destacar el expertisede Godoy Córdoba, asegurando réplicas digitales para maximizar la visibilidad y el impacto de la marca en portafolio.co",
+        image: "https://i.imgur.com/qlEQMum.png",
+        name: "Colegio Rochester - Contenido en la revista semana",
+        description: "Junto con el Colegio Rochester diseñamos una estrategia en colaboración con Revista Semana parainformar a padres de familia sobre la innovación pedagígica del colegio. ",
         features: [
             {
                 icon: `<svg width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M3 13.625C3 13.0037 3.50368 12.5 4.125 12.5H6.375C6.99632 12.5 7.5 13.0037 7.5 13.625V20.375C7.5 20.9963 6.99632 21.5 6.375 21.5H4.125C3.50368 21.5 3 20.9963 3 20.375V13.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.75 9.125C9.75 8.50368 10.2537 8 10.875 8H13.125C13.7463 8 14.25 8.50368 14.25 9.125V20.375C14.25 20.9963 13.7463 21.5 13.125 21.5H10.875C10.2537 21.5 9.75 20.9963 9.75 20.375V9.125Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.5 4.625C16.5 4.00368 17.0037 3.5 17.625 3.5H19.875C20.4963 3.5 21 4.00368 21 4.625V20.375C21 20.9963 20.4963 21.5 19.875 21.5H17.625C17.0037 21.5 16.5 20.9963 16.5 20.375V4.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
@@ -20,7 +19,7 @@ const projects = [
             },
         ],
         category: "Category 1",
-        client: "Godoy Córdoba",
+        client: "Colegio Rochester",
         startdate: "Start Date 1",
         enddate: "End Date 1",
         teams: [
@@ -64,9 +63,9 @@ const projects = [
                 ],
             }
         ],
-        satisfaction: "6.867",
+        satisfaction: "700.000",
         scope: "150.000",
-        roi: "859 posts",
+        roi: "2.500 clics/ interacciones",
         comments: "Estamos muy contentos con el resultado del proyecto dado que se entregó en tiempo y forma. Adicionalmente, el equipo de trabajo fue muy profesional y atento a nuestras necesidades.",
     },
     {
@@ -140,9 +139,10 @@ const projects = [
     },
     {
         index: "03",
-        image: "https://i.imgur.com/7FEC7ak.jpg",
-        name: "Natugas- Contenido en Portafolio",
-        description: "En estrecha colaboración con Portafolio, creamos un contenido impactante para Naturgas, resaltando su papel como habilitador de la movilidad sostenible en el segmento de carga pesada.",
+        image: "https://i.imgur.com/sBIVEJ9.png",
+        videoUrl:"https://drive.google.com/file/d/1FsffArapY37rSfuj5oh0jH38u8u-vgTV/preview",
+        name: "Pengin Random House - Proyección en la Torre Colpatria y Cuñas de Radio",
+        description: "En colaboración con la editorial Penguin Random House realizamos el lanzamiento de la obra pósuma 'En agosto nos Vemos' de Gabriel Gacía Márquez, a través de un escenario atípico: la torre colpatria.",
         features: [
             {
                 icon: `<svg width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M3 13.625C3 13.0037 3.50368 12.5 4.125 12.5H6.375C6.99632 12.5 7.5 13.0037 7.5 13.625V20.375C7.5 20.9963 6.99632 21.5 6.375 21.5H4.125C3.50368 21.5 3 20.9963 3 20.375V13.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.75 9.125C9.75 8.50368 10.2537 8 10.875 8H13.125C13.7463 8 14.25 8.50368 14.25 9.125V20.375C14.25 20.9963 13.7463 21.5 13.125 21.5H10.875C10.2537 21.5 9.75 20.9963 9.75 20.375V9.125Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.5 4.625C16.5 4.00368 17.0037 3.5 17.625 3.5H19.875C20.4963 3.5 21 4.00368 21 4.625V20.375C21 20.9963 20.4963 21.5 19.875 21.5H17.625C17.0037 21.5 16.5 20.9963 16.5 20.375V4.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
@@ -202,15 +202,15 @@ const projects = [
                 ],
             }
         ],
-        satisfaction: "75.000",
+        satisfaction: "N/A",
         scope: "N/A",
-        roi: "50.000 impresiones",
+        roi: "1,4MM oyentes",
         comments: "Estamos muy contentos con el resultado del proyecto dado que se entregó en tiempo y forma. Adicionalmente, el equipo de trabajo fue muy profesional y atento a nuestras necesidades.",
     },
     {
         index: "04",
         image: "https://i.imgur.com/9Gai6ZH.jpg",
-        videoUrl: "https://www.youtube.com/embed/gB24HjWAejU?si=RBz-Bt0Y-_HoEz3z",
+        videoUrl: "https://www.youtube.com/embed/gB24HjWAejU?si=A456q3fHviJap7PI",
         name: "Summum Projects - Contenido y Video Entrevista en Portafolio",
         description: "En asociación con Portafolio, llevamos a cabo una estrategia digital para aumentar la visibilidad de la marca Summum ",
         features: [
