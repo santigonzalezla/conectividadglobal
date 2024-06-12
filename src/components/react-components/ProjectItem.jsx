@@ -62,27 +62,8 @@ const ProjectItem = ({project, index, isOpen, onClick}) =>
                             <p>{project.description}</p>
                         </div>
                         <div className="project-item-info-bottom">
-                            <div className="project-item-info-data">
-                                <div className="project-item-info-data-item-first">
-                                    <p>Categoría</p>
-                                    <h3>{project.category}</h3>
-                                </div>
-                                <div className="project-item-info-data-item">
-                                    <p>Cliente</p>
-                                    <h3>{project.client}</h3>
-                                </div>
-                                <div className="project-item-info-data-item">
-                                    <p>Fecha Inicial</p>
-                                    <h3>{project.startdate}</h3>
-                                </div>
-                                <div className="project-item-info-data-item">
-                                    <p>Fecha Finalización</p>
-                                    <h3>{project.enddate}</h3>
-                                </div>
-                            </div>
-                            
                             <div className="project-item-info-results">
-                                <h2>Resultados del Proyecto</h2>
+                                <h2>Resultados</h2>
                                 <div className="project-item-info-results-data">
                                     <div className="project-item-info-results-data-item-first">
                                         <p><span>Lectores:</span> {project.satisfaction}</p>

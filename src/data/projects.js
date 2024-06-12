@@ -71,7 +71,7 @@ const projects = [
     },
     {
         index: "02",
-        image: "https://i.imgur.com/gx2B1R2.jpg",
+        image: "https://imgur.com/Fjv7vbN.jpeg",
         name: "Camara Colombiana de la Infraestructura",
         description: "Como parte de nuestra estrategia para promover el Congreso de Infraestructura, publicamos un aviso de pauta comercial Revista Semana, alcanzando una audiencia ámplia.",
         features: [
