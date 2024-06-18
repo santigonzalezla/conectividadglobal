@@ -50,10 +50,7 @@ const ProjectItem = ({project, index, isOpen, onClick}) =>
                 <div className="project-item-info">
                     <div className="project-features">
                         {project.features.map((feature, indexFeatures) => (
-                            <div key={indexFeatures} className="project-feature-item">
-                                <span dangerouslySetInnerHTML={{__html: feature.icon}}/>
-                                <p>{feature.name}</p>
-                            </div>
+                            <></>
                         ))}
                     </div>
                     <div className="project-item-info-container">
