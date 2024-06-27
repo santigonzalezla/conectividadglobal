@@ -8,7 +8,7 @@ import ContactForm from '../react-components/ContactForm'
             <h1>Contáctanos</h1>
             <div class="contact-info-details">
                 <div class="info-details" onclick="location.href='mailto:mercadeo@conectividadglobal.co?subject=Consulta Conectividad Global&body=Hola! Quiero conocer sus servicios.'">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="#FFF">
                         <path d="M0.075 5.8325C0.226227 5.16986 0.597983 4.57822 1.12938 4.15446C1.66078 3.73071 2.32033 3.49995 3 3.5H21C21.6797 3.49995 22.3392 3.73071 22.8706 4.15446C23.402 4.57822 23.7738 5.16986 23.925 5.8325L12 13.121L0.075 5.8325ZM0 7.5455V18.2015L8.7045 12.8645L0 7.5455ZM10.1415 13.745L0.2865 19.7855C0.52999 20.2989 0.91429 20.7326 1.39467 21.0362C1.87505 21.3397 2.43176 21.5005 3 21.5H21C21.5681 21.5001 22.1246 21.3389 22.6048 21.0351C23.0849 20.7313 23.4688 20.2975 23.712 19.784L13.857 13.7435L12 14.879L10.1415 13.7435V13.745ZM15.2955 12.866L24 18.2015V7.5455L15.2955 12.8645V12.866Z" fill="#8493B6"/>
                     </svg>
                     <h4>mercadeo@conectividadglobal.co</h4>
@@ -27,7 +27,7 @@ import ContactForm from '../react-components/ContactForm'
                     <h4>+57 315 3391661</h4>
                 </div>
                 <div class="info-details" onclick="location.href='https://www.google.com/maps/dir//Cra.+67+%23167-61,+Suba,+Bogot%C3%A1/@4.7519385,-74.0642352,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f85a5e5fb36bd:0xee8a783f672f222e!2m2!1d-74.0642352!2d4.7519385?hl=es&entry=ttu'">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28" fill="#FFF">
                         <path d="M12 14C12.825 14 13.5315 13.7256 14.1195 13.1768C14.7065 12.6289 15 11.97 15 11.2C15 10.43 14.7065 9.7706 14.1195 9.2218C13.5315 8.67393 12.825 8.4 12 8.4C11.175 8.4 10.469 8.67393 9.882 9.2218C9.294 9.7706 9 10.43 9 11.2C9 11.97 9.294 12.6289 9.882 13.1768C10.469 13.7256 11.175 14 12 14ZM12 28C7.975 24.8033 4.969 21.8339 2.982 19.0918C0.994 16.3506 0 13.8133 0 11.48C0 7.98 1.2065 5.19167 3.6195 3.115C6.0315 1.03833 8.825 0 12 0C15.175 0 17.9685 1.03833 20.3805 3.115C22.7935 5.19167 24 7.98 24 11.48C24 13.8133 23.0065 16.3506 21.0195 19.0918C19.0315 21.8339 16.025 24.8033 12 28Z" fill="#8493B6"/>
                     </svg>
                     <h4>Centro Empresarial Colina Office Park, Bogotá D.C.</h4>
@@ -69,7 +69,7 @@ import ContactForm from '../react-components/ContactForm'
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #142133;
+        background-color: #2196f3;
         border-radius: 30px;
         padding: 90px 70px;
         gap: 100px;
@@ -110,6 +110,11 @@ import ContactForm from '../react-components/ContactForm'
     .info-details
     {
         text-decoration: none;
+    }
+
+    .info-details path
+    {
+        fill: #FFF;
     }
 
     .info-details:hover
