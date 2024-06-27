@@ -108,7 +108,7 @@
     width: 100%;
 }
 
-.services-list-item-content-right img
+.services-list-item-content-right img, iframe
 {
     width: 100%;
     object-fit: cover;
