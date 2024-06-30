@@ -47,7 +47,18 @@ const ServicesList = ({ items }) =>
                                 <PopupButton />
                             </div>
                             <div className="services-list-item-content-right">
-                                <img src={item.image} alt={item.title} />
+                            {item.videoUrl ? (
+                                     <iframe
+                                     width="640"
+                                     height="360"
+                                     src={item.videoUrl}
+                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                     allowFullScreen
+                                     title={item.title}
+                                 ></iframe>
+                                ) : (
+                                    <img src={item.image} alt={item.title} />
+                                )}
                             </div>
                         </div>
                     )}
